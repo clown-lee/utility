@@ -22,7 +22,7 @@ public:
 template <typename T>
 inline Vec3<T> Normalize(Vec3<T> v) {
 
-	float length = sqrt(v.x * v.x+ v.y * v.y + v.z * v.z);
+	T length = sqrt(v.x * v.x+ v.y * v.y + v.z * v.z);
 	if (abs(length - std::numeric_limits<T>::epsilon()) <= static_cast<T>(0)) {
 		length = 1.0f;
 	}
